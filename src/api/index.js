@@ -60,6 +60,7 @@ export async function fetchCards({name, text}) {
             `https://api.magicthegathering.io/v1/cards?name=${name}&text=${text}`
         );
 
+        console.log(data)
         return data.cards || [];
     } catch(error) {
         throw error;
